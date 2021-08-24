@@ -1,0 +1,43 @@
+.perfilLayout {
+  height: 100vh; /* Magic here */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  
+.logLayout {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.invitationTop{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbfc9;
+  background-color: #add9f7;
+}
+
+.invitation{
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #bbbfc9;
+  background-color: #c7c7c7;
+}
+
+.nopadding {
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+.ptop {
+  padding-top: 15px;
+}
+
+
+  
