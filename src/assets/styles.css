@@ -27,7 +27,7 @@
   align-items: center;
   justify-content: center;
   border: 1px solid #bbbfc9;
-  background-color: #c7c7c7;
+
 }
 
 .nopadding {
@@ -39,5 +39,11 @@
   padding-top: 15px;
 }
 
+
+.formBorder{
+  border: 3px solid #755f70;
+  border-radius: 5%;
+  padding:25px;
+}
 
   

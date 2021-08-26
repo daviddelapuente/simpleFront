@@ -1,14 +1,36 @@
-import React, { Component } from 'react';
+import React, {useEffect, useState } from 'react';
 import Invitation
- from './Invitation';
-export default class Invitations extends Component {
-  render() {
+from './Invitation';
+import axios from 'axios'
+
+const Invitations =() =>{
+    const [items, setItems] = useState([]);
+    const [isAvailable, setAvailable] = useState(false);
+
+    useEffect(() => {
+      axios.get('http://localhost:3001/users')
+      .then(({ data }) => {
+        const itemsAux=[]
+        for (const [index, value] of data.entries()) {
+          itemsAux.push(<Invitation key={index} name={value["username"]} total={value["linkcount"]} balance={value["linkcount"]*5000}/>)
+        }
+        setItems(itemsAux);
+        setAvailable(true);
+        
+      })
+      .catch((error) =>{ console.log("error")})
+      
+    }, []);
+
+
     return (
         <>
-            <Invitation name="Juanito" total="3" balance="15000"/>
-            <Invitation name="Camilo" total="1" balance="5000"/>
-            <Invitation name="María" total="2" balance="10000"/>
+            {isAvailable ? (null):(<p>Cargando datos...</p>)}
+            {items}
+
         </>
     );
-  }
+  
 }
+
+export default Invitations

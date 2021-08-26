@@ -9,17 +9,9 @@ const Navigation =() =>{
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav>
                         <Nav.Link href="/">Inicio</Nav.Link>
-                        {false ? (
-                            <>
-                            </>
-                        ) : (
-                            <>
-                                <Nav.Link href="/Login">Iniciar sesión</Nav.Link>
-                                <Nav.Link href="/Signup">Registrarme</Nav.Link>
-                                <Nav.Link href="/MyInvitations">Mis invitaciones</Nav.Link>
-                                <Nav.Link href="/NewLink">Nuevo link</Nav.Link>
-                            </>
-                        )}
+                        <Nav.Link href="/Signup">Registrar</Nav.Link>
+                        <Nav.Link href="/MyInvitations">Ver invitaciones </Nav.Link>
+                        <Nav.Link href="/NewLink">Invitar</Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

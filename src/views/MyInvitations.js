@@ -5,7 +5,9 @@ import {
 import InvitationsHeader from '../components/invitations/InvitationsHeader';
 import Invitations from '../components/invitations/Invitations';
 
+
 export default class MyInvitations extends Component {
+
   render() {
     return (
         <div className="perfilLayout">

@@ -6,6 +6,7 @@ import { Route, Switch } from 'react-router-dom';
 import Home from './views/Home';
 import MyInvitations from './views/MyInvitations';
 import NewLink from './views/NewLink';
+import NewUserSuccesfull from './views/NewUserSuccesfull';
 import './App.css';
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
           <Route path='/MyInvitations' component={MyInvitations}/>  
           <Route path='/Login' component={Login}/>  
           <Route path='/Signup' component={Signup}/>  
+          <Route path='/NewUserSuccesfull' component={NewUserSuccesfull}/>  
           <Route path='/' component={Home}/>            
       </Switch>       
     </div>
