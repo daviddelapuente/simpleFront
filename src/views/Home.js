@@ -7,7 +7,7 @@ export default class Home extends Component {
     return (
         <div className="perfilLayout">
             <div style={{width:"800px"}}>
-              <Header text={"Bienvenido a CurrencyBird link invitation"}/>
+              <Header text={"Bienvenido a CurrencyBird link invitation desde Amplify"}/>
               <SimpleText text={"Está es una app de prueba creada por Dania de la Puente. Aca podras registrar usuarios, generar links de invitación y ademas podras ver un ranking de los usuarios con más invitaciones"} />
               <Header text={"¿Como registrar?"}/>
               <SimpleText text={"Si quieres ingresar tus propios usuarios para probar la app. Debes hacer click en 'Registrar' en la barra de navegación, rellenar el formulario y listo."}/>
